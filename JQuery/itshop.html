@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT SHOP</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div id="itshop">
+        <ul>
+            <a href=""><li id="shop">IT Shop</li></a>
+           <a href="checkout.html"> <li id="home">Home <i class="fa-solid fa-cart-shopping" id="house"></i><span id="count"></span></li></a>
+        </ul>
+    </div>
+    <div id="laptop">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0442/2749/4055/products/Lenovo-Ideapad-3-Arctic-Grey-2_1024x1024.png?v=1638867581" alt="">
+            <p class="loop">Laptop 1</p>
+            <p class="price">Price : 2300000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="1" data-name="laptop 1" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://images.samsung.com/is/image/samsung/assets/us/galaxybooks/gb3-series/5316/NV06-GB3-PCD-FloatingNav-GB3Ultra-M.jpg?$FB_TYPE_J_F_MO_JPG$" alt="">
+            <p class="loop">Laptop 2</p>
+            <p class="price">Price : 2000000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="2" data-name="laptop 2" data-price="2000000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://www.laptop.lk/wp-content/uploads/2022/03/Hp-Omen-16-b0234TX-04.jpg" alt="">
+            <p class="loop">Laptop 3</p>
+            <p class="price">Price : 3300000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="3" data-name="laptop 3" data-price="3300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/71ZkUQfIIAL._SL1500_.jpg" alt="">
+            <p class="loop">Laptop 4</p>
+            <p class="price">Price : 1700000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="4" data-name="laptop 4" data-price="1700000">Add to Cart</button>
+        </div>
+    </div>
+    <div id="laptop">
+        <div>
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-13-pro-max-graphite-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072989055" alt="">
+            <p class="loop">iPhone 1</p>
+            <p class="price">Price : 2300000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="5" data-name="iPhone 1" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://specifications-pro.com/wp-content/uploads/2021/08/iPhone-13-2.jpg" alt="">
+            <p class="loop">iPhone 2</p>
+            <p class="price">Price : 2300000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="6" data-name="iPhone 2" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-13-pro-max-graphite-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072989055" alt="">
+            <p class="loop">iPhone 3</p>
+            <p class="price">Price : 2300000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="7" data-name="iPhone3" data-price="2300000">Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://specifications-pro.com/wp-content/uploads/2021/08/iPhone-13-2.jpg" alt="">
+            <p class="loop">iPhone 4</p>
+            <p class="price">Price : 2300000 MMK</p>
+            <button type="submit" class="btn addtocart" data-id="8" data-name="iPhone4" data-price="2300000">Add to Cart</button>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            count();
+            function count(){
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+                    if(shopArray!=0){
+                        $('#count').text(shopArray.length);
+                    }
+                }
+                else{
+                    $('#count').text('0');
+                        
+                    }
+            }
+            $('.addtocart').click(function(){
+                let item_id=$(this).data('id');
+                let item_name=$(this).data('name');
+                let item_price=$(this).data('price');
+                console.log(item_id,item_name,item_price);
+
+                let shopobj={
+                    id:item_id,
+                    name:item_name,
+                    price:item_price,
+                    qty:1
+                }
+                console.log(shopobj);
+                let shopString=localStorage.getItem('shops');
+                let shopArray;
+                if(shopString==null){
+                    shopArray=[];
+                }else{
+                    shopArray=JSON.parse(shopString);
+                }
+
+                let status=false;
+                $.each(shopArray, function(i,v){
+                    if(item_id==v.id){
+                        status=true;
+                        v.qty++;
+                    }
+                   
+                }) 
+                if(status==false){
+                        shopArray.push(shopobj);
+                    }
+                let shopdata=JSON.stringify(shopArray);
+                localStorage.setItem('shops', shopdata);
+
+                count();  
+            })
+        })
+    </script>
+</body>
+</html>

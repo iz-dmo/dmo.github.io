@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Property And Method</title>
+</head>
+<body>
+    <h1>Property And Method</h1>
+    <h2 id="createtextnode"></h2>
+    <p id="design" style="color: brown;">PPPP</p>
+    <button onclick="minn()">CreateText</button>
+    <button onclick="thway()">CreateElement</button>
+    <button onclick="effdesign()">CLICK</button>
+</body>
+ <script>
+    function minn() {
+        
+        let msge=document.getElementById('createtextnode');
+        let click=document.createTextNode('This IS Sayar Gyi');
+        createtextnode.appendChild(click);
+    }
+function thway() {
+    let dmo=document.createElement('h3');
+    dmo.innerText='Create Element H3'
+    document.body.appendChild(dmo);
+    
+}
+function effdesign() {
+    let style=document.getElementById('design');
+    style.getAttribute('style');
+    console.log(style);
+}
+ </script>
+</html>

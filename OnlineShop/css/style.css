@@ -1,0 +1,529 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: font;
+}
+@font-face {
+    font-family: font;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+.logo{
+    width: 150px;
+    height: 130px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-bottom: px;
+}
+.navbar{
+display: inline-block;
+
+
+}
+.nav ul{
+    float: right;
+}
+.nav ul li{
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul li a:hover{
+    color: red;
+}
+.nav{
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .1 );
+}
+/* bunner  */
+.bunner img{
+    width: 1300px;
+    height: 480px}
+.pp1{
+    
+  position: absolute;
+  top: 250px;
+  left: 90px;
+  color:white;
+  background-color: rgba(15, 15, 15, 0.4);
+  padding-left: 25px;
+  padding-right: 10px; padding-top: 8px;
+  width: 500px; border-radius: 20px;
+
+ }
+ .bunner button{
+    width: 100px;
+    height: 40px;
+
+margin-bottom: 15px;
+margin-top: 10px; border-radius: 15px; 
+border: 1px solid red; color: red;
+ }
+ button:active{
+    background-color: rgb(21, 20, 22);
+ } .bunner p{
+    margin-top: 10px;
+ }
+ /* end bunner  */
+ /* start support  */
+ .support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+ }
+ .support div{
+    border: 1px solid gray;
+    padding: 30px;
+    border-radius: 10px;
+ }
+.support div p{
+    display: inline-block;
+    margin-left: 15px;
+}
+.support div p span{
+    color: gray;
+} 
+/* start promotion  */
+.promo{
+    margin-top: 50px;
+    font-weight: unset;
+    margin-left: 50px;
+}
+.divided{
+    width: 60px;
+    margin-left: 50px;
+    border: 2px solid red;
+}
+
+.shirt{
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-gap: 30px;
+margin-left: 90px;
+margin-right: 90px;
+margin-top: 10px;
+}
+.shirt div img{
+    width: 224px;
+    height: 280px;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+.shirt div{
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+.shirt div p{
+    text-align: center;
+
+    
+}
+.discount{
+    position: relative;
+    top: -320px;
+    left: 85px;
+    color: red;
+}
+#disc{
+    background-color: red;
+    color: white;
+    width: 35%;
+    border-radius: 20px;
+    margin-left: 31%;
+    margin-top: 10px;
+    margin-right: 3px;
+}
+/* start new arrival */
+.arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    grid-gap: 30px;
+   
+}
+.arrival div{
+/* border: 1px solid gray;  */
+border-radius: 7px;
+box-shadow: 0px 3px 20px rgba(0, 0, 0, .3 );
+position: relative;
+
+}
+.arrival div p{
+ margin-left: 10px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.arrival div img{
+    width: 224px;
+    height: 280px;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+.new_divd{
+    display: flex;
+}
+.first_line{
+    width: 130px;
+    border: 2px solid pink;
+  
+}
+
+.line{
+    width: 130px;
+    border:  2px solid rgb(229, 138, 138);
+}
+.mmk{
+    word-spacing: 150px;
+    font-size: 15px;
+}
+.detail{
+    position: absolute;
+    top: 120px;
+    right: 108px;
+    width: 50px;
+    height: 30px;
+    border: none;
+    color: red;
+    border-radius: 7px;
+    border: 1px solid red;
+ opacity: 0;
+    /* display: none;  */
+}
+
+.arrival div:hover .detail{
+/* background-color: rgb(209, 152, 152);  */
+/* color: aliceblue;  */
+opacity: 1;
+}
+.arrival img:hover{
+    opacity: .7;
+}
+.detail:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+/* start subscribe  */
+
+.subs{
+    background-color: rgb(240, 43, 43);
+    color: white;
+    margin-top: 50px;
+    height: 230px;
+}
+.subs div{
+    padding-top: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+    float: left;
+    
+}
+.head2{
+    font-weight: 100;
+}
+   
+
+.subs div p{
+    margin-top: 10px;
+    width: 700px;
+    margin-bottom: 10px;
+}
+.input_subs{
+    width: 400px;
+    outline: none; 
+    border-radius: 5px 0px 0px 5px;
+    height: 25px;
+    border: 1px solid white;
+}
+.button_subs{
+    outline: none;  
+    border-radius: 0px 5px 5px 0px;
+    width: 70px;
+    background-color: green;
+    height: 29px;
+    /* border: 1px solid white;  */
+    border: none;
+}
+.subs img{
+    width: 200px;
+    height: 120px;
+    margin-top: 70px;
+    /* margin-bottom: 20px;  */
+    margin-left: 90px;
+    
+}
+/* start news  */
+.news{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 40px;
+    margin-top: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.news img{
+    width: 100%; 
+    border-radius: 5px 5px 0px 0px;
+}
+.news_title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    margin-left: 10px;
+}
+.news span{
+    font-style: italic;
+    font-size: 15px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   display: inline-block;
+   margin-left: 10px;
+}
+.read{
+    text-decoration: none;
+    color: red;
+    margin-left: 10px;
+}
+.news div{
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 5px;
+}
+.news p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.news_images:hover{
+transform: scale(1.1);
+transition-duration: .8s;
+
+
+}
+.img_hover{
+    overflow: hidden;
+    display: block;
+}
+.feature{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    background-color: black;
+    color: gray;
+    margin-top: 20px;
+    /* margin-left: 20px;  */
+    /* margin-right: 20px;  */
+}
+.feature div{
+    margin: 20px 50px 20px 50px;
+}
+.nav_bar{
+    text-decoration: none;
+    display: block;
+    color: gray;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.feature_title{
+    font-weight: lighter;
+    margin-bottom: 10px;
+} 
+.feature_icon{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.feature a:hover{
+    color: red;
+}
+.address{
+    display: inline;
+    color: gray;
+}
+.feature span{
+    margin-right: 200px;
+    font-size: 45%;
+    font-weight: lighter;
+    
+}
+ /* product_bunner start  */
+ .product div{
+    position: absolute;
+    top: 150px;
+    left: 420px;
+ }
+ .product input{
+    width: 490px;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 7px ;
+    margin-left: 10px;
+    border: none;
+    letter-spacing: 5px; text-align: center;
+ }
+ .product h2{
+    color: black;
+    text-align: center;
+    letter-spacing: 12px;
+    /* font-style: italic;  */
+    /* margin-left: 40px;  */
+    font-size: 30px; 
+ }
+ .product button{
+    width: 100px;
+    height: 45px;
+    margin-top: 50px;
+    margin-left: 220px;
+    border-radius: 7px;
+    border: 1px solid black;
+    background-color: white;
+    color: red;
+    
+ }
+ .product button:hover{
+    transform: scale(1.1);
+    transition-duration: .3;
+    background-color: brown;
+    color: white;
+ }
+ .blou{
+    margin-bottom: 10px;
+    color: red;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 50px; margin-left: 40px;
+ }
+ /* end product_bunner  */
+ /* start men_fashion */
+ .men {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+ }
+.men img{
+    width: 224px;
+    height: 280px;
+    padding-left: 30px;
+}
+.men div{
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, .3 );
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.men p{
+    margin: 10px 0px 10px 20px;
+    word-spacing: 110px;
+    /* font-style: italic; */
+   
+}
+.men_spn{
+    display: flex;
+   
+}
+
+.first_hr{
+    border: 2px solid pink;
+    width: 130px;
+}
+
+.sec_hr{
+    width: 130px;
+    border: 2px solid rgb(243, 169, 150);
+   
+}
+.men_detail{
+    position: relative;
+    top: -250px;
+    left: 120px;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid red;
+    opacity: 0;
+}
+.men div:hover .men_detail{
+    opacity: 1;
+}
+.men img:hover{
+    opacity: .8;
+}
+.men_detail:hover{
+    background-color: darkgray;
+    color: black;
+}
+.men_see{
+    text-decoration: none;
+    /* margin-left: 300%; */
+    padding-bottom: 30px;
+    text-align: right;
+    padding-left: px;
+}
+.men_see:hover{
+    color: brown;
+}
+.men_shirt{
+    font-size: 20px;
+    
+}
+.about_head img{
+    float: left;
+    margin-right: 10px;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+.about_head h1{
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.about_head p{
+   margin-left: 10px;
+   /* display: inline-block;  */
+   padding-left: 5px;
+}
+.contact{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    margin-bottom: 50px;
+
+}
+iframe{
+    margin-left: 700px;
+    border-radius: 7px;
+}
+
+.cont_div p{
+    font-size: 40px;
+    position: relative;
+    top: -350px;
+    margin-left: 100px;
+    color: rgb(49, 47, 47);
+}
+.msge{
+    display: block;
+    font-size: 20px;
+    margin-left: 100px;
+    color: gray;
+}
+.con_icon{
+    margin-right: 50px;
+}
+.future{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+} 

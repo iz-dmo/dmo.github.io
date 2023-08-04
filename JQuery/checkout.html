@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT SHOP</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div id="itshop">
+        <ul>
+            <a href="itshop.html"><li id="shop">IT Shop</li></a>
+           <a href="itshop.html"> <li id="home">Home <i class="fa-solid fa-cart-shopping" id="house"></i><span id="count"></span></li></a>
+        </ul>
+    </div>
+    <table border="1" cellspacing="0" cellpadding="25" id="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Item Qty</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table> <br> <br>
+    <button id="order">Order</button>
+    <script src="jquery.min.js"></script>
+    <script src="count.js"></script>
+    <script>
+        $(document).ready(function(){
+            getdata();
+            count();
+            function getdata(){
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+                    let data='';
+                    let no='1';
+                    let total=0;
+
+                    $.each(shopArray,function(i,v){
+                        data+=`<tr>
+                            <td>${no++}</td>
+                            <td>${v.name}</td>
+                            <td>${v.price}</td>
+                            <td>${v.qty}</td>
+                            <td><button class="min" data-index="${i}">-</button>${v.price*v.qty} <button class="max" data-index="${i}">+</button>MMK</td>
+                            </tr>`;
+                    });
+                    $('#tbody').html(data);
+                }
+            }
+            $('#tbody').on('click', '.min', function(){
+                let index=$(this).data('index');
+                //console.log(index);
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+                    $.each(shopArray, function(i,v){
+                        if (index==i){
+                            v.qty--;
+
+                        }
+                        if(v.qty==0){
+                            shopArray.splice(index,1);
+                        }
+                    })
+                    let shopdata=JSON.stringify(shopArray);
+                    localStorage.setItem('shops',shopdata);
+
+                    getdata();
+                    count();
+                }
+            })
+            $('#tbody').on('click', '.max', function(){
+                let index=$(this).data('index');
+
+                let shopString=localStorage.getItem('shops');
+                if(shopString){
+                    let shopArray=JSON.parse(shopString);
+                    $.each(shopArray,function(i,v){
+                        if (index==i){
+                            v.qty++;
+                        }
+                    });
+                    let shopdata=JSON.stringify(shopArray);
+                    localStorage.setItem('shops', shopdata);
+                    getdata();
+                }
+            })
+            $('#order').click(function(){
+                let ans=confirm('Are you sure to order?');
+                if(ans){
+                    localStorage.clear();
+                    window.location.href='itshop.html';
+                }
+            })
+           
+        })
+    </script>
+</body>
+</html>

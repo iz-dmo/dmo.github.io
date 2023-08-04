@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(120, 181, 189);
+}
+h1{
+    text-align: center;
+    color: chocolate;
+}
+form{
+    width: 500px;
+    margin: auto;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="date"]{
+    width: 400px;
+    height: 35px;
+    outline: none; 
+}
+:focus{
+    color: brown;
+    /* background-color: rgb(187, 207, 152);  */
+    border: 4px solid grey;
+}
+:checked+label{
+    font-style: italic;
+    color: chocolate;
+}
+:disabled+label{
+    color: rgb(148, 139, 128);
+}
+li:first-child{
+    background-color: coral;
+}
+li:nth-child(4){
+    background-color: chartreuse;
+}
+li:last-child{
+    background-color: darkgreen;
+}
+p:empty{
+    background-color: black;
+    height: 20px;
+    width: 100px;
+}
+p{
+    text-align: center; 
+}
+.btn_save{
+    width: 100px;
+    height: 30px;
+}

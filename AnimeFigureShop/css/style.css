@@ -1,0 +1,628 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: teemo; 
+    /* background-color: black;  */
+}
+@font-face {
+    font-family: teemo;
+    src: url(../font/Slabo27px-Regular.ttf)
+}
+   
+
+ /* start head_footer  */
+.head{
+    padding: 0px 0px 0px 0px;
+    /* box-shadow: 0px 3px 20px rgba(0, 0, 0, 0 ); */
+    background-color: white;
+}
+.head img{
+ width: 10%;
+ margin: 20px 0px 10px 40px;
+} 
+.head ul li{
+    display: inline-block;
+}
+.head_footer{
+    background-color: white;
+}
+.search{
+    position: relative;
+    top: -70px;
+    left: 30%;
+}
+.head input{
+    width: 300px;
+    height: 30px;
+    border: 0px solid gray;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, .1 );
+    padding: 5px 0px 5px 150px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.login{
+    position: relative;
+    top: -70px;
+    left: 40%;
+}
+.head a{
+    text-decoration: none;
+    color: black;
+}
+.create{
+    position: relative;
+    top: -70px;
+    left: 42.5%;
+}
+.spn_cart{
+    display: block;
+    position: relative;
+    left: 20px;
+}
+.cart{
+    position: relative;
+    top: -50px;
+    left: 45%;
+}
+.login:hover, .create:hover, .cart:hover{
+    color: orangered;
+}
+/* start nav  */
+.nav{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 110px;
+    letter-spacing: 1px;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover{
+    color: orangered;
+}
+/* start off  */
+.off img{
+ width: 280px;
+ margin-right: 15px;
+}
+.off{
+    margin: 35px 0px 0px 250px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+}
+.off img:hover{
+    cursor: pointer;
+}
+.sign{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.doff{
+    color: gray;
+    font-style: oblique;
+}
+.up_div input{
+width: 300px;
+height: 20px;
+padding: 5px 0px 5px 10px;
+border: 1px solid orangered;
+margin: 20px 0px 10px 550px;
+}
+.up_div button{
+    display: block;
+    margin: 7px 0px 0px 550px;
+    width: 313px;
+    height: 30px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+.up_div button:hover{
+cursor: pointer;
+/* background-color: brown; */
+opacity: .7;
+}
+ 
+/* start footer  */
+.footer{
+    background-color: rgba(65, 65, 65, .4);
+    /* position: relative; */
+    /* top: -400px; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    
+}
+.footer span{
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+.footer span:hover{
+color: orangered;
+cursor: pointer;
+}
+.footer p{
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 20%;
+}
+.footer p:hover{
+    cursor:  pointer;
+    color: orangered;
+}
+.mtk{
+    margin-top: 20px;
+}
+ /* start create  */
+ .sign_up{
+    text-align: center;
+    margin-top: 50px;
+ }
+.sign_up span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.sign_up span:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.divd{
+    width: 80%;
+    margin: 20px 50px 30px 150px;
+}
+.name_twy input{
+width: 400px;
+height: 35px;
+margin: 10px 0px 10px 150px;
+border: 1px gray solid;
+padding: 5px 0px 5px 10px;
+}
+.hrr{
+    margin-left: 150px;
+}
+.name_twy button{
+    width: 10%;
+    height: 30px;
+    margin: 20px 0px 30px 150px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 5px 0px 5px 0px;
+}
+.name_twy button:hover{
+cursor: pointer;
+width: 11%;
+height: 34px;
+transition: .8s;
+}
+.name_twy input:hover{
+    width: 430px;
+    cursor: pointer;
+    border: 1px solid orangered;
+}
+.divdd{
+    margin-bottom: 50px;
+}
+/* end create  */
+
+/* start login  */
+.cu_login h1{
+    text-align: center;
+}
+.cu_login{
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+.cu_login span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.cu_login span:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.customer input{
+    width: 400px;
+height: 35px;
+margin: 10px 0px 10px 150px;
+border: 1px gray solid;
+padding: 5px 0px 5px 10px;
+}
+.hrrr{
+    margin-left: 150px;
+}
+.looin{
+    width: 10%;
+    height: 30px;
+    margin: 20px 0px 30px 150px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 5px 0px 5px 0px;
+}
+.forget{
+    margin-left: 220px;
+    color: chocolate;
+    margin-bottom: 10px;
+}
+.forget:hover{
+    cursor: pointer;
+    color: orange;
+
+}
+.hiii{
+    margin-bottom: 30px;
+}
+.customer input:hover{
+    width: 430px;
+    cursor: pointer;
+    border: 1px solid orangered;
+}
+.crt{
+color: gray;
+}
+.crt:hover{
+    cursor: pointer;
+    border: 1px orangered solid;
+    color: black;
+}
+
+.looin:hover{
+    cursor: pointer;
+width: 11%;
+height: 34px;
+transition: .8s;
+}
+.name_twy img{
+    width: 30%;
+    position: absolute;
+    top: 330px;
+    left: 800px;
+}
+.customer img{
+    width: 16%;
+    position: absolute;
+    top: 290px;
+    left: 800px;
+}
+/* end login  */
+/* start  contact  */
+.contact a{
+    text-decoration: none;
+    color: orangered;
+}
+.contact{
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    letter-spacing: 3px;
+}
+.contact h1{
+    margin-top: 10px;
+}
+.form{
+    margin: 10px 0px 10px 150px;
+    height: 650px;
+    /* border: solid 1px red; */
+}
+.form h3{
+    margin-top: 20px;
+}
+.cont_form{
+    width: 500px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 330px;
+    left: 700px;
+    /* padding-top: 20px; */
+}
+.letter{
+    font-size: 10px;
+    width: 425px;
+    margin-top: 10px;
+}
+.cont_form h3{
+margin: 0px;
+padding: 0px;
+}
+
+.cont_put{
+    width: 420px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid orangered;
+    padding: 5px 0px 0px 5px;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+.cont_form select{
+    width: 430px;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   height: 30px;
+}
+.cont_form span{
+    color: orangered;
+}
+.check{
+ margin-right: 15px;
+    display: inline-block;
+}
+.cont_form button{
+    border: none;
+    width: 420px;
+    background-color: orangered;
+    color: white;
+    height: 35px;
+    margin-top: 35px;
+}
+.cont_form button:hover{
+    width: 430px;
+    cursor: pointer;
+    transition: .6s;
+}
+.check:hover, .cont_form span:hover, .cont_form select{
+    cursor: pointer;
+}
+.cont_put:hover, .cont_form select:hover{
+    width: 440px;
+}
+.form img{
+    width: 30%;
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+/* end contact  */
+ 
+/* start about  */
+.about_head{
+    text-align: center;
+    margin-top: 30px;
+}
+.about{
+    width: 650px;
+    position: absolute;
+    top: 350px;
+    left: 680px;
+}
+.abu{
+    margin-bottom: 40px;
+}
+.about h2{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.about span{
+    font-weight: lighter;
+}
+.about h3{
+    margin-top: 20px;
+}
+/* end about  */
+
+/* start home  */
+.deals{
+    text-align: center;
+    color: black;
+    background-color: orangered;
+    margin-top: 40px;
+    padding: 30px;
+    overflow: hidden;
+    
+    
+}
+.hot img{
+    width: 224px;
+    height: 300px;
+    border: 1px white solid;
+    margin-left: 30px;
+
+}
+.hot{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* border: 1px solid rgb(85, 21, 233); */
+    background-color: black;
+    /* margin-left: 80px; */
+    /* margin-right: 80px; */
+grid-gap: 3px;
+/* margin-bottom: 0px; */
+}
+.hot div{
+    width: 300px;
+    /* border: 1px solid gray; */
+    border-radius: 10px;
+margin-top: 20px;
+/* margin-bottom: 20px; */
+}
+.hot p{
+    color: beige;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 200px;
+}
+.first_div{
+    margin-left: 60px;
+}
+.sec_div{
+    margin-right: 60px;
+}
+.deel{
+    color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    font-size: 19px;
+    left: 100px;
+}
+.deal_spn{
+    text-decoration: line-through;
+    color: red;  
+    display: inline-block;
+    margin-left: 20px;
+}
+.cart_btn{
+    width: 100px;
+    height: 55px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    margin: 40px 20px 0px 20px;
+}
+.cart_btn:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.hott{
+    margin: 30px 0px 5px 600px;
+    width: 200px;
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+}
+.hott:hover, .hottt:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.view{
+    background-color: black;
+    margin-bottom: 30px;
+}
+.view a{
+    text-decoration: none;
+    color: white;
+}
+.hot img:hover{
+    cursor: pointer;
+    transition: .7s;
+    transform: scale(1.05);
+  /* background-image: url(../images/hot_deals.webp); */
+  /* background-size: cover; */
+}
+/* start hot deals  */
+.hd_head{
+    margin: 50px 0px 15px 20px;
+    color: brown;
+    text-align: center;
+}
+.hd_hr{
+    margin-bottom: 40px;
+    width: 77%;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.hd_div img, .hd_divv img, .hd_divvv img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.hd_div,.hd_divv, .hd_divvv{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    width: 500px;
+    grid-gap: 30px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+.hd_div div, .hd_divv div, .hd_divvv div{
+    border-radius: 10px;
+}
+.hd_div div:hover, .hd_divv div:hover, .hd_divvv div:hover{
+    border: none;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .2 );
+}
+.heart{
+    position: relative;
+    bottom: 310px; left: 120px;
+    color: orangered;
+    opacity: 0;
+
+}
+.hd_div div:hover .heart, .hd_divv div:hover .heart, .hd_divvv div:hover .heart{
+opacity: 1;
+}
+.hd_div button{
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hd_div button:hover, .hd_div img:hover, .hd_divv button:hover, .hd_divv img:hover, .hd_divvv img:hover, .hd_divvv button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.hd_label{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.brand{
+    font-size: 9px;
+    color: white;
+    font-weight: lighter;
+}
+.hd_label:hover{
+    color: orangered;
+}
+.pricee{
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 5px;
+}
+.hd_divv button{
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hd_divvv button{
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hd_headdd{
+    margin: 50px 0px 15px 20px;
+    color: brown;
+    text-align: center;
+}
+.hd_headd{
+    margin: 50px 0px 15px 20px;
+    color: brown;
+    text-align: center;
+}

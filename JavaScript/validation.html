@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <h1>Validation</h1>
+    <form action="ok.php" onsubmit="return checkV()">
+        Name: <input type="text" name="" id="name"> <span id="reQu" ></span><br> <br>
+        Email: <input type="email" name="" id="email"> <span id="reQu1" ></span><br><br>
+        Password: <input type="password" name="" id="passW"><span id="reQu2" ></span><br> <br>
+        Confirm Password: <input type="password" name="" id="com_pass"><span id="reQu3" ></span><br><br>
+        <input type="checkbox" name="" id="boox" onclick="checkBox()"> Show Password <br>
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        function checkV() {
+           // alert('ok')
+           let name=document.getElementById('name').value;
+           let email=document.getElementById('email').value;
+           let password=document.getElementById('passW').value;
+           let confirm=document.getElementById('com_pass').value;
+           if(name=="") {
+            document.getElementById('name').style.border='1px solid red';
+             document.getElementById('reQu').innerText="*Required";
+             document.getElementById('reQu').style.color="red";
+            return false;
+           } 
+           if(email==""){
+            document.getElementById('email').style.border='1px solid red';
+             document.getElementById('reQu1').innerText="*Required";
+             document.getElementById('reQu1').style.color="red";
+             return false;
+           }
+           if (password=="") {
+            document.getElementById('passW').style.border='1px solid red';
+             document.getElementById('reQu2').innerText="*Required";
+             document.getElementById('reQu2').style.color="red";
+             return false;
+           }
+           if (confirm=="") {
+            document.getElementById('com_pass').style.border='1px solid red';
+             document.getElementById('reQu2').innerText="*Required";
+             document.getElementById('reQu3').style.color="red";
+             return false;
+           }
+           else{
+            let koborder=document.getElementById('name');
+            let kocolor=document.getElementById('reQu');
+            koborder.removeAttribute('style');
+            kocolor.removeAttribute('style');
+            let komail=document.getElementById('email');
+            let kostyle=document.getElementById('reQu1');
+            komail.removeAttribute('style');
+            kostyle.removeAttribute('style');
+            let passOrd=document.getElementById('passW');
+            let passcolor=document.getElementById('reQu2');
+            passOrd.removeAttribute('style');
+            passcolor.removeAttribute('style');
+            let oknrsr=document.getElementById('com_pass');
+            let httyay=document.getElementById('reQu3');
+            koborder.removeAttribute('style');
+            kocolor.removeAttribute('style');
+            if (password!=confirm) {
+                document.getElementById('com_pass').style.border='1px solid red';
+             document.getElementById('reQu3').innerText="*Incorrect Passowrd";
+             document.getElementById('reQu3').style.color="red";
+             
+             return false;
+            }
+            return true;
+           }
+        }
+
+    </script>
+</body>
+</html>

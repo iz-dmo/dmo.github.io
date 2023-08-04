@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{
+            max-width: 100px;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <P id="click">life and death are just two sides of the same coins.</P>
+    <button id="add_class">Add class</button>
+    <button id="remove_class">Remove</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#add_class').click(function(){
+                $('p').addClass('home');
+            })
+            $('#remove_class').click(function(){
+                $('p').removeClass('home');
+            })
+            $('#click').click(function(){
+                $('p').toggleClass('home');
+            })
+        })
+    </script>
+</body>
+</html>

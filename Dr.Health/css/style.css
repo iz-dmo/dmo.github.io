@@ -1,0 +1,72 @@
+*{
+    
+    
+    font-family: roboto;
+    /* border: none !important; */
+    /* outline: none !important; */
+    transition: all .2s linear;
+    /* overflow-x: hidden; */
+
+}
+@font-face {
+    font-family: roboto;
+    src: url(../Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+#carouselExampleControls{
+    margin: 0;
+    padding: 0;
+}
+.nav-link:hover{
+color: grey !important;
+}
+/* .drr{
+    background-color: rgb(210, 227, 243);
+} */
+.nav-link{
+    color: cornflowerblue;
+}
+.bbg{
+    background-color: cornflowerblue;
+    color: beige;
+}
+.learn:hover{
+    background-color: grey;
+    color: white;
+    border: none;
+}
+
+/* .kk{
+    position: fixed;
+    top: 0%;left: 0;
+    width: 100%;
+} */
+.dheal:hover{
+    transform: scale(1.03);
+}
+.dheal{
+    box-shadow: 1px 0 15px rgba(0, 0, 0, .3) ;   
+}
+.postt:hover{
+    box-shadow: 1px 0 7px rgba(0, 0, 0, .3) ;   
+}
+
+.review{
+    background:url(../images/review.jpg),linear-gradient(rgb(167, 161, 161),rgb(184, 176, 176)) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    
+}
+.postt img:hover{
+    transform: scale(1.03);
+    transition-duration: 1s;
+    border-radius: 6%;
+}
+.tfoot{
+    color: gainsboro;
+}
+.tfoot:hover{
+    color: burlywood;
+}
+/* testing */

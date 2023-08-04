@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Event Lesson</h1>
+    <img src="natuto.jpg" alt="" id="mypic" width="300" height="200" onmouseover="big()" onmouseleave="normal()" onload="oky()"> <br>
+<input type="text" name="" id="myinput" onkeyup="sayhi()">
+<p id="result"></p>
+</body>
+<script>
+    function big() {
+        document.getElementById('mypic').style.width="500px";
+        document.getElementById('mypic').style.height="500px";
+
+    }
+    function normal() {
+        document.getElementById('mypic').style.width="300px";
+        document.getElementById('mypic').style.height="200px";
+    }
+    function sayhi() {
+        let res=document.getElementById('myinput').value;
+        document.getElementById('result').innerHTML=res;
+    }
+</script>
+</html>

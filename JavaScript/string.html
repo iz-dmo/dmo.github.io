@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String</h1>
+    <script>
+        let firstName='S Chaw Ly'
+        let lastName='Min Thway Khant'
+        console.log(lastName.length);
+        let fullName=firstName+ '' +lastName;
+       // let fullName=firstName.consat ('',lastName)
+       console.log(fullName);
+       console.log('My name is '+ fullName);
+       console.log('<h1>'+ firstName+ '</h1><h1>'+lastName+'</h1>');
+       console.log(`My name is ${fullName} .I am 18 years old.`);
+
+       console.log(fullName.toLocaleUpperCase());
+       console.log(fullName.toLocaleLowerCase());
+
+       let string='My World,My Mom';
+       console.log(string.substr(2,6));
+       let job='     May   May      ';
+       console.log(job.trim());
+
+       let ser='Javascript is funny';
+       console.log(ser.search('is'));
+       console.log(ser.indexOf('is'));
+
+       let rep='You are mine';
+       console.log(rep.replace('mine','not mine'));
+
+       let a='1,345,657';
+       let rep_result=a.replace(/\,/g,'');
+       console.log(rep_result);
+
+       console.log('I\'m Min Thway Khant');
+       console.log("I'm Min Thway Khant");
+       console.log(`I'm Min Thway Khant. 5'8"`);
+
+    </script>
+</body>
+</html>

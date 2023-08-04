@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cc">
+       <span id="hr">00</span>
+       <span>:</span>
+       <span id="mins">00</span>
+       <span>:</span>
+       <span id="secs">00</span>
+       <span id="session">PM</span>
+
+    </div>
+    <script>
+        function dateTime() {
+            let time=new Date;
+            let hours=time.getHours();
+            let minutes=time.getMinutes();
+            let seconds=time.getSeconds();
+            document.getElementById('hr').innerHTML=hours;
+            document.getElementById('mins').innerHTML=minutes;
+            document.getElementById('secs').innerHTML=seconds;
+        }
+    if(hr>=12){
+        document.getElementById('session').innerHTML="PM"
+    }else{
+        document.getElementById('session').innerHTML="AM" 
+    }
+setInterval(dateTime,1000);
+    </script>
+</body>
+</html>

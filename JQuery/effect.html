@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veniam alias distinctio expedita a! Omnis similique facere nihil rerum officia fugiat nulla distinctio! Repellendus nihil itaque ipsum quaerat iure voluptas alias illum enim consequuntur! Magnam modi libero cum nostrum asperiores reprehenderit facere unde consequuntur ratione ex non nihil, ipsam inventore aliquam, rem dolorem! Sint, corrupti quibusdam modi tenetur ad laudantium, ipsam illum dolorem aperiam quas, quam cupiditate. Minus, molestiae nisi?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadeIn">FadeIN</button>
+    <button id="fadeOut">FadeOut</button>
+    <button id="fadeToggle">FadeToggle</button>
+    <button id="fade_to">Fade_To</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('p').hide(3000,function(){
+                    alert('Arr Bwrr');
+                });
+            })
+            $('#show').click(function(){
+                $('p').show(3000,function(){
+                    
+                })          
+            })
+            $('#toggle').click(function(){
+                $('p').toggle(2000);
+            })
+            $('#fadeIn').click(function(){
+                $('p').fadeIn(2000);
+            })
+            $('#fadeOut').click(function(){
+                $('p').fadeOut(2000);
+            })
+            $('#fadeToggle').click(function(){
+                $('p').fadeToggle(4000);
+            })
+            $('#fade_to').click(function(){
+                $('p').fadeTo(2000,0.1); //>>FadeTo (speed , opcity(0-1) , callback function)
+            })
+            
+        })
+    </script>
+</body>
+</html>

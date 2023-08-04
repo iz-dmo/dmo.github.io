@@ -1,0 +1,137 @@
+/* pseudo selector  */
+a:link{
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+a:active{
+    color:red}
+a:visited{
+    color: rgb(72, 30, 139);
+
+}
+#desc a{
+    color: rgb(155, 187, 97);
+}
+#name{
+    color: darkblue;
+    text-align: center;
+}
+#child>a{
+    color: lawngreen;
+}
+/* attribute selector  */
+a[title="Youtube"]{
+    color: gold;
+}
+/* target  */
+ /* #targetone{ */
+    /* color: brown; */
+    /* border: 1px solid blue; */
+
+p:target{
+    color: chartreuse;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+.b_one{
+    border: 10px solid gold;
+}
+.b_two{
+    border-bottom: 10px double blueviolet;
+    border-top: 5px solid blue;
+}
+/* inline  */
+.inline{
+    border: 1px solid greenyellow;
+    color: darkblue !important;
+    width: 200px;
+    display: inline-block;
+}
+.block {
+    border: 1px solid black;
+    width: 200px;
+    display: inline-block
+}
+.float_left img{
+    width: 200px;
+    float: left;
+}
+.float_right img{
+    width: 200px;
+    float: right;
+}
+/* grid  */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+.gridone,.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.gridtwo{
+    display: grid;
+    /* grid-column-gap: 10px;  */
+    /* grid-row-gap: 20px;  */
+    grid-gap: 30px;
+    grid-template-columns: auto auto;
+}
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.rowadd{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.relative_par{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+.relative{
+border: 1px solid blue;
+    width: 170px;
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+.abso_par{
+    border: 1px solid yellow;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+.absolute{
+    border: 1px solid green;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 170px;
+}
+.fixed{
+    position: fixed;
+    top: 30px;
+}
+/* Font  */
+.online{
+    font-family: 'Zeyada', cursive;
+}
+
+    @font-face {
+        font-family: oswald;
+        src: url("../static/Oswald-Bold.ttf");
+    }
+    .offline{
+        font-family: oswald;
+    }
+
+

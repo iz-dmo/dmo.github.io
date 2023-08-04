@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form action="" name="my_form">
+<label for="name">Name</label>
+<input type="text" name="name" id=""><br>
+<label for="myanmar">Myanmar</label>
+<input type="number" name="myanmar" id="myanmar"><br>
+<label for="myanmar">English</label>
+<input type="number" name="English" id="english"><br>
+<label for="math">Math</label>
+<input type="number" name="math" id="math"><br>
+<label for="chem">Chemisty</label>
+<input type="number" name="chem" id="chem"><br>
+<label for="physic">Physics</label>
+<input type="number" name="physic" id="physic"><br>
+<label for="bio">Bio</label>
+<input type="number" name="bio" id="bio"><br>
+<button type="button" onclick="result()">Result</button>
+    </form>
+    <script>
+function result(){
+    let name=document.my_form.name.value;
+    let myanmar=document.my_form.myanmar.value;
+    let english=document.my_form.english.value;
+    let math=document.my_form.math.value;
+    let physic=document.my_form.physic.value;
+    let chem=document.my_form.chem.value;
+    let bio=document.my_form.bio.value;
+
+    if (myanmar >=40 && english >=40 && math >=40 && chem >=40 && physic >=40 && bio >=40){
+document.write(name+'<h1>is Pass</h1>')    
+}
+ if (myanmar >=75 && myanmar >=40){
+    document.write('Myanmar D')
+ }if(english>=75 && english >=40){
+    document.write('English D')
+ }if(math >=80  && math >=40){
+    document.write('Mathematics D')
+
+ }
+ if(chem >=80 && chem >=40){
+    document.write('Chemsity D')
+ }
+ if(physic >=80 && physic>=40){
+    document.write('Physics D')
+ }
+ if(bio >=75 && bio>=40){
+    document.write('Bio D')
+ }
+ else {
+document.write(name+'<h1>is Fail</h1>');
+    }
+}
+    </script>
+</body>
+</html>

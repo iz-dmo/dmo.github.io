@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaisyClothing</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="icon" href="assets/img/logoicon.png">
+</head>
+<body>
+<!-- start nav bar -->
+<div class=" bg_nav d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <div class="py-2">
+        <i class="fa-solid fa-phone fa-lg text-dark me-1"></i> 
+        <span class="text-dark">+959-402670002</span>
+        <!-- <i class="fa-solid fa-location-dot fa-lg text-dark me-1 ms-3"></i> -->
+        <span class="text-dark ms-3">Hlaing,Yangon</span>
+      </div>
+      <div class="py-2">
+        <span class="text-dark">Super Values Deals- Save more with Coupons</span>
+      </div>
+      <div class=""><a href="login_register.html" class="btn text-dark">Log in<span>
+        <a href="account.html" class="btn"><i class="fa-solid fa-user-plus fa-lg text-dark"></i></a></span></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <nav class="navbar navbar-expand-xl navbar-dark">
+    <div class="container">
+      <img src="assets/img/daisy.logo.png" alt="" class="img-fluid navbar-brand logo me-3">
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="offcanvas" 
+        data-bs-target="#navbarOffcanvas"
+        aria-controls="navbarOffcanvas"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg_toggle"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg_nav" id="navbarOffcanvas"
+          tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="assets/img/daisy.logo.png" alt="" class="img-fluid navbar-brand logo">
+            <button type="button" class="btn-close btn-close-success text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">          
+            <div class="navbar-nav">
+              <div class="d-lg-none d-md-block">
+                <span><i class="fa-solid fa-magnifying-glass linkk fa-lg me-2"></i><input type="text" class="inputing1 pt-1 pb-1 ps-2" placeholder="Search for Items"></span>
+              </div>
+              <a class="nav-item nav-link active linkk mx-sm-2" aria-current="page" href="#">Home</a>
+              <a class="nav-item nav-link linkk mx-sm-2" href="shop.html">Shop</a>
+              <a class="nav-item nav-link linkk  mx-sm-2" href="shop.html">My Account</a>
+              <a class="nav-item nav-link linkk  mx-sm-2" href="shop.html">Compare</a>
+              <a class="nav-item nav-link linkk  mx-sm-2 me-sm-5" href="shop.html">Login</a>
+              <a class="nav-item nav-link linkk hidden me-sm-3" href=""></a>
+              <a href="" class="nav-link linkk blog ms-sm-5 d-none d-lg-block btn"><i class="fa-solid fa-magnifying-glass fa-lg ms-sm-5"></i></a>
+              <input type="text" class="inputing d-none d-lg-block ms-1" placeholder="Search for Items">
+            <div>
+              <a type="button" class="btn bg_nav position-relative cart me-4 ms-sm-3" href="" >
+                <i class="fa-solid fa-cart-shopping linkk fa-xl"></i>
+                <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning number">0</span>
+              </a>
+              <a type="button" class="btn bg_nav position-relative cart" href="" >
+                <i class="fa-solid fa-heart linkk fa-xl"></i>
+                <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning number">0</span>
+              </a>
+            </div>
+            </div>
+          </div>
+      </div>  
+    </div>
+  </nav>    
+  <!-- end navbar -->
+
+  <!-- start home page -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-5 d-none d-md-block">
+        <div class="mt-md-5">
+          <h6 class="text-secondary">Hot Promotions</h6>
+          <h3 class="fashion">Fashion Trending</h3>
+          <h1 class="great">Great Collection</h1>
+          <p class="text-secondary save">Save more with coupons & up to 20% off</p>
+          <button class="btn shopnow">Shop Now</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <img src="assets/img/home-img.png" alt="" class="img-fluid">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+<!-- jquery link -->
+<script src="assets/jquery.min.js"></script>
+<!-- bootstrap js  -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- fontawesome link -->
+<script src="assets/fontawesome/js/all.min.js"></script>
+<!-- custom js link -->
+<script src="assets/cus.js"></script>
+</body>
+</html>

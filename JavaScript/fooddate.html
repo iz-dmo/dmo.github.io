@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Data</title>
+</head>
+<body>
+<h1>Accounting Form</h1>
+    <form action="" name="myform">
+        <label for="date">DATE</label>
+        <input type="date" name="kmkl" id="kmkl"> <br>
+        <label for="menu">MENU</label>
+        <input type="text" name="menu" id="menu"><br>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price"> <br>
+        <button onclick="showData()" type="button">CLICK HERE!</button>
+    </form>
+    <h1>Accounting List Here!</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+<thead>
+    <tr>
+        <th>DATE</th>
+        <th>MENU</th>
+        <th>PRICE</th>
+    </tr>
+</thead>
+<tbody id="tbody">
+   
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="2" align="center">TOTAL</td>
+        <td id="tattoo"></td>
+    </tr>
+</tfoot>
+    </table>
+    <script>
+        var food=[];
+        
+        function showData() {
+            let date=document.myform.kmkl.value;
+            let menu=document.myform.menu.value;
+            let price=document.myform.price.value;
+            console.log(date,menu,price);
+            
+       
+
+   
+            let accounting={
+                calendar:date,
+                meal:menu,
+                zay:price,
+
+            }
+            
+            food.push(accounting);
+            showthway();
+        }
+        function showthway() {
+            let thway='';
+            let total=0;
+for (let i = 0; i < food.length;i++) {
+    console.log(food[i]);
+    let accObj=food[i];
+    total+=parseInt(accObj.zay);
+    thway=thway+`
+    <tr>
+        <td>${accObj.calendar}</td>
+        <td>${accObj.meal}</td>
+        <td>${accObj.zay}</td>
+   </tr>
+   ` ; 
+
+    }
+   document.getElementById('tbody').innerHTML=thway;
+   document.getElementById('tattoo').innerHTML=total;
+         }
+        
+    </script>
+    <p> tw tw doke kha py tl javascript.. "/ <br>
+        hta min wa aug sr htr
+
+    </p>
+</body>
+</html>
