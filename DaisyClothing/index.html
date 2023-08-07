@@ -11,6 +11,8 @@
     <!-- fontawesome link -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="icon" href="assets/img/logoicon.png">
+    <!-- swiper link -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
 </head>
 <body>
 <!-- start nav bar -->
@@ -80,7 +82,7 @@
   <!-- end navbar -->
 
   <!-- start home page -->
-  <div class="container mt-5">
+  <div class="container my-5">
     <div class="row">
       <div class="col-12 col-md-5 d-none d-md-block">
         <div class="mt-md-5">
@@ -97,9 +99,61 @@
       </div>
 
     </div>
-
   </div>
-
+<!-- end home page -->
+<!-- start category  -->
+<div class="container">
+  <h3 class="text-secondary"><span class="linkk">Popular</span> Categories</h3>
+  <section class="customer-logos slider mt-3">
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-1.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">T-shirt</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-2.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Bags</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-3.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Sandal</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-4.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Scarf Cap</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-5.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Shoes</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-6.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Pillowcase</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-7.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Jumpsuit</h6>
+        </a>
+      </div>
+      <div class="slide">
+        <a href="shop.html" style="text-decoration: none;">
+          <img src="assets/img/category-8.jpg" alt="" class="img-fluid rounded">
+          <h6 class="linkk text-center mt-2">Hats</h6>
+        </a>
+      </div>
+   </section>
 
 
 
@@ -111,5 +165,31 @@
 <script src="assets/fontawesome/js/all.min.js"></script>
 <!-- custom js link -->
 <script src="assets/cus.js"></script>
+<!-- swiper link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </body>
 </html>
+<script>
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2050,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+</script>
