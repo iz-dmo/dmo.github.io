@@ -50,9 +50,10 @@
     border-radius: 7%;
 }
 .bg_toggle{
-    background-color: rgb(203, 239, 243);
+    background-color: rgb(98, 161, 158) !important;
     /* border: rgb(162, 204, 228) 2px solid !important; */
     border-radius: 5px !important;
+    width: 50%;
 }
 
 /* home start */
