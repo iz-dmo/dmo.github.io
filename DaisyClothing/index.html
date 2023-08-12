@@ -23,13 +23,13 @@
         <i class="fa-solid fa-phone fa-lg text-dark me-1"></i> 
         <span class="text-dark">+959-402670002</span>
         <!-- <i class="fa-solid fa-location-dot fa-lg text-dark me-1 ms-3"></i> -->
-        <span class="text-dark ms-3">Hlaing,Yangon</span>
       </div>
       <div class="py-2">
         <span class="text-dark">Super Values Deals- Save more with Coupons</span>
       </div>
-      <div class=""><a href="login_register.html" class="btn text-dark">Log in<span>
-        <a href="account.html" class="btn"><i class="fa-solid fa-user-plus fa-lg text-dark"></i></a></span></a>
+      <div class="py-2">
+        <i class="fa-solid fa-location-dot fa-lg"></i>
+        <span class="text-dark">Hlaing,Yangon</span>
       </div>
 
     </div>
@@ -43,7 +43,15 @@
         data-bs-target="#navbarOffcanvas"
         aria-controls="navbarOffcanvas"
         aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon bg_toggle"></span>
+        <a type="button" class="btn bg_nav position-relative cart me-3" href="" >
+          <i class="fa-solid fa-cart-shopping linkk fa-lg"></i>
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning number">0</span>
+        </a>
+        <a type="button" class="btn bg_nav position-relative cart" href="" >
+          <i class="fa-solid fa-heart linkk fa-lg"></i>
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning number">0</span>
+        </a>
+        <span class="navbar-toggler-icon bg_toggle ms-4"></span>
       </button>
       <div class="offcanvas offcanvas-end bg_nav" id="navbarOffcanvas"
           tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
@@ -66,11 +74,11 @@
               <input type="text" class="inputing d-none d-lg-block ms-1" placeholder="Search for Items">
             <div>
               <a type="button" class="btn bg_nav position-relative cart me-4 ms-sm-3" href="" >
-                <i class="fa-solid fa-cart-shopping linkk fa-xl"></i>
+                <i class="fa-solid fa-cart-shopping linkk fa-lg"></i>
                 <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning number">0</span>
               </a>
               <a type="button" class="btn bg_nav position-relative cart" href="" >
-                <i class="fa-solid fa-heart linkk fa-xl"></i>
+                <i class="fa-solid fa-heart linkk fa-lg"></i>
                 <span class="position-absolute top-0 translate-middle badge rounded-pill bg-warning number">0</span>
               </a>
             </div>
@@ -84,7 +92,7 @@
   <!-- start home page -->
   <div class="container my-5">
     <div class="row">
-      <div class="col-12 col-md-5 d-none d-md-block">
+      <div class="col-12 col-md-5">
         <div class="mt-md-5">
           <h6 class="text-secondary">Hot Promotions</h6>
           <h3 class="fashion">Fashion Trending</h3>
@@ -101,7 +109,7 @@
     </div>
   </div>
 <!-- end home page -->
-<!-- start category  -->
+<!-- start category-->
 <div class="container">
   <h3 class="text-secondary"><span class="linkk">Popular</span> Categories</h3>
   <section class="customer-logos slider mt-3">
@@ -154,8 +162,416 @@
         </a>
       </div>
    </section>
+<!-- product section -->
+  <ul class="nav nav-pills mt-5 mb-2" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active featured" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Featured</button>
+    </li>
+    <li class="nav-item mx-2" role="presentation">
+      <button class="nav-link bg-light text-dark featured_popular" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Popular</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link bg-light text-dark featured_new" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">New Added</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+<!-- featured -->
+    <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-1-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_hot">Hot</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">25000 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-2-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_new">New</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">22100 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-3-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_sell">Best Sell</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">31900 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-4-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_sale">Sale</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">19500 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-5-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_hot">Hot</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">12700 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-6-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_sale">Sale</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">21000 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-7-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_new">New</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">22300 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-8-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_hot">Hot</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">38700 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </div>
+<!-- popular -->
+    <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-1-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_hot">Hot</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">25000 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-5-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_hot">Hot</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">12700 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-8-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_hot">Hot</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">38700 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- new added  -->
+    <div class="tab-pane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-2-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_new">New</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">22100 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 my-3 product_border">
+            <div class="card mainBorder shadow">
+             <a href="html.html"><img src="assets/img/product-7-1.jpg" alt="" class="card-img-top product_border"></a>
+              <div class="card-body pb-0">
+                <span class=" bg_new">New</span>
+                <span class="text-secondary" style="font-size: smaller;">Clothing</span>
+                <h6 class="" style="font-weight: bold;">Colorful Pattern Shirts</h6>
+                <span class="text-warning">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                 <a class="btn addcart" href="shop.html" ><i class="fa-solid fa-cart-shopping" data-toggle="tooltip" title="Add to Cart"></i></a>
+                 <a class="btn addcart me-2" href="wishlist.html" data-toggle="tooltip" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                </span>
+               <p class=" mmk" style="font-weight: bold;">22300 MMK
+                <!-- <span class="text-secondary ms-2" style="font-size: smaller;text-decoration: line-through;">32000 MMK</span>-->
+               </p>           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- deals section -->
+<div class="container my-4">
+  <div class="row">
+    <div class="col-12 col-md-6 bg_deal py-3 px-3 my-3">
+      <h2 class="deal" style="letter-spacing: 1px;">Deal of the Day
+        <span class="text-secondary d-block" style="font-size: medium;letter-spacing: 1px;">Limited quantities</span>
+      </h2>
+      <div class="my-4">
+        <h5 style="letter-spacing: 1px;" class="m-0 p-0">Summer Collection New</h5>
+        <h5 style="letter-spacing: 1px;" class="m-0 p-0">Modern Design</h5>
+      </div>
+      <h6 class="mb-4 discount_deal" style="font-weight: bold;">24500 MMK<span class="text-secondary ms-2" style="text-decoration: line-through; font-weight: 450;">35600 MMK</span></h6>
+
+      <p class="m-0 mb-3">Hurry Up!Offer End In:</p>
+      <div id="clockdiv" class="mt-">
+        <div class="">
+          <span class="days countdown"></span>
+          <span class="ms-2">:</span>
+          <div class="smalltext m-0 ms- mt-1">Days</div>
+        </div>
+        <div class="mx-2">
+          <span class="hours countdown"></span>
+          <span class="ms-2">:</span>
+          <div class="smalltext m-0 ms- mt-1">Hours</div>
+        </div>
+        <div class="mx-2">
+          <span class="minutes countdown"></span>
+          <span class="ms-2">:</span>
+          <div class="smalltext m-0  mt-1">Mins</div>
+        </div>
+        <div class="mx-2">
+          <span class="seconds countdown"></span>
+          <div class="smalltext m-0 ms-1 mt-1">Sec</div>
+        </div>
+      </div>
+      <button class="btn deal_btn">Shop Now</button>
+      
+      
+  </div>
+  <div class="col-12 col-md-6 bg_deall py-3 px-3 my-3">
+    <h2 class="deal" style="letter-spacing: 1px;">Women Clothing 
+      <span class="text-secondary d-block ms-1" style="font-size: medium;letter-spacing: 1px;"> Shirt & Bag</span>
+    </h2>
+    <div class="my-4">
+      <h5 style="letter-spacing: 1px;" class="m-0 p-0">Try Something New On</h5>
+      <h5 style="letter-spacing: 1px;" class="m-0 p-0">Vacation</h5>
+    </div>
+    <h6 class="mb-4 discount_deal" style="font-weight: bold;">27000 MMK<span class="text-secondary ms-2" style="text-decoration: line-through; font-weight: 450;">39000 MMK</span></h6>
+
+    <p class="m-0 mb-3">Hurry Up!Offer End In:</p>
+    <div id="clockdivv" class="clockdiv">
+      <div class="">
+        <span class="days countdown"></span>
+        <span class="ms-2">:</span>
+        <div class="smalltext m-0 ms- mt-1">Days</div>
+      </div>
+      <div class="mx-2">
+        <span class="hours countdown"></span>
+        <span class="ms-2">:</span>
+        <div class="smalltext m-0 ms- mt-1">Hours</div>
+      </div>
+      <div class="mx-2">
+        <span class="minutes countdown"></span>
+        <span class="ms-2">:</span>
+        <div class="smalltext m-0  mt-1">Mins</div>
+      </div>
+      <div class="mx-2">
+        <span class="seconds countdown"></span>
+        <div class="smalltext m-0 ms-1 mt-1">Sec</div>
+      </div>
+    </div>
+    <button class="btn deal_btn">Shop Now</button>
+    
+    
+</div>
 
 
+</div>
 
 <!-- jquery link -->
 <script src="assets/jquery.min.js"></script>
@@ -192,4 +608,5 @@
         }]
     });
 });
+
 </script>

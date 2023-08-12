@@ -7,6 +7,7 @@
     font-family: roboto;
     src: url(Fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
 }
+
 .logo{
     width: 120px !important;
 }
@@ -71,6 +72,11 @@
 .shopnow{
     background-color: rgb(98, 161, 158) !important;
     color: white !important;
+}
+.shopnow:hover{
+    color:  rgb(98, 161, 158) !important;
+    background-color: white !important;
+    border: 1px solid  rgb(98, 161, 158) !important;
 }
 
 
@@ -193,5 +199,186 @@
 .slide{
     border: 1px solid rgb(243, 236, 236);
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px;
+}
+
+/* product section */
+
+.featured{
+    color: rgb(98, 161, 158) !important;
+    background-color: rgb(243, 230, 212) !important;
+}
+
+/* .img_front{
+    position: absolute;
+    width: 18.5%;
+    left: 9.5%;
+} */
+
+ 
+  .product_border{
+    border-radius: 25px !important;
+  }
+ 
+  .mainBorder{
+    /* border: 1px solid rgb(216, 214, 214); */
+    border-radius: 25px !important;
+    padding: 5px 5px 1px 5px;
+    position: relative;
+
+  }
+  
+  
+  .bg_hot{
+    background-color: rgb(247, 137, 155) !important;
+    width: 18% !important;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: small;
+    position: absolute !important;
+    left: 4.3%;
+    top: 3.5%;
+  }
+  .bg_new{
+    background-color:  rgb(98, 161, 158) !important;
+    width: 18% !important;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: small;
+    position: absolute !important;
+    left: 4.3%;
+    top: 3.5%;
+  }
+  .bg_sell{
+    background-color:  orange !important;
+    width: 23% !important;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: small;
+    position: absolute !important;
+    left: 4.3%;
+    top: 3.5%;
+    padding: 2px;
+  }
+  .bg_sale{
+    background-color: skyblue !important;
+    width: 18% !important;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: small;
+    position: absolute !important;
+    left: 4.3%;
+    top: 3.5%;
+  }
+  .addcart{
+    /* position: absolute;
+    right: 3%;
+    top: 200px; */
+    border: 1px solid rgb(98, 161, 158) !important;
+    color: rgb(98, 161, 158) !important;
+    float: right !important;
+
+  }
+  .addcart:hover{
+    background-color: rgb(98, 161, 158) !important;
+    color: white !important;
+  }
+  .mmk{
+    color: rgb(98, 161, 158) !important;
+    display: block;
+  }
+
+  .featured_popular:focus{
+    color: rgb(98, 161, 158) !important;
+    background-color: rgb(243, 230, 212) !important;
+}
+.featured_new:focus{
+    color: rgb(98, 161, 158) !important;
+    background-color: rgb(243, 230, 212) !important;
+}
+
+.deal{
+    color: rgb(98, 161, 158) !important;
+}
+
+.discount_deal{
+    color: rgb(247, 137, 155);
+}
+
+/* deal */
+
+.bg_deal{
+    background-image: url(img/deals-1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+    border-radius: 7px;
+    box-shadow: 0px 2px 1px  rgb(243, 230, 212);
+
+}
+.bg_deall{
+    background-image: url(img/deals-2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0px 2px 1px  rgb(243, 230, 212);
+}
+
+#clockdiv{
+	/* font-family: sans-serif; */
+	/* color: #fff; */
+	display: flex;
+	font-weight: 100;
+	/* text-align: center; */
+	/* font-size: 30px; */
+    
+}
+#clockdivv{
+	/* font-family: sans-serif; */
+	/* color: #fff; */
+	display: flex;
+	font-weight: 100;
+	/* text-align: center; */
+	/* font-size: 30px; */
+    
+}
+
+
+#clockdiv div > .countdown{
+	padding: 6px;
+	border-radius: 5px;
+	background:  rgb(98, 161, 158);
+	/* display: inline; */
+    color: white;
+}
+
+#clockdivv div > .countdown{
+	padding: 6px;
+	border-radius: 5px;
+	background:  rgb(98, 161, 158);
+	/* display: inline; */
+    color: white;
+}
+
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 13px;
+    /* text-align: center; */
+
+}
+.deal_btn{
+    color:  rgb(98, 161, 158) !important;
+    border: 2px solid  rgb(98, 161, 158) !important;
+    margin-top: 15px;
+}
+
+.deal_btn:hover{
+    background-color:  rgb(98, 161, 158) !important;
+    color: white !important;
 }
